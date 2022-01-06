@@ -1,0 +1,9 @@
+name: Grapplehook
+version: '${project.version}'
+main: com.polychroma.grapplehook.Grapplehook
+api-version: 1.18
+authors: [ Safyre ]
+description: Adds a grappling hook into the game
+commands:
+  grapplehook:
+    description: "Gives you a grappling hook"
