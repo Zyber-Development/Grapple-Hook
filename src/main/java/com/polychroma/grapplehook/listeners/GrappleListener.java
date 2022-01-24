@@ -44,7 +44,7 @@ public class GrappleListener implements Listener {
             //Player is on cooldown
             long timeDiff = System.currentTimeMillis() - grappleCooldown.get(player.getName());
             long secondsLeft = 6 - TimeUnit.MILLISECONDS.toSeconds(timeDiff);
-            player.sendMessage(ChatColor.DARK_RED + "Your grappling hook is still on cooldown for " + (int)secondsLeft + " seconds");
+            player.sendMessage(ChatColor.CYAN + "Du kan ikke bruge grappling hook før " + (int)secondsLeft + " sekundter");
             return;
         }
 
