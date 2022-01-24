@@ -18,11 +18,11 @@ public class GrappleHookCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(!(sender instanceof Player)){
-            sender.sendMessage("You must be a player to use this command");
+            sender.sendMessage("Console kan ikke udføre denne kommando");
             return true;
         }
         ((Player)sender).getInventory().addItem(grappleHook);
-        sender.sendMessage(ChatColor.DARK_GREEN + "You have received a grappling hook!");
+        sender.sendMessage(ChatColor.CYAN + "Du har modtaget et grappling hook");
         return true;
     }
 }
